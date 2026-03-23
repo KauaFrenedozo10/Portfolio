@@ -1,2 +1,1 @@
-Meu portifólio 
-https://kauafrenedozo10.github.io/Portf-lio/
+Para a ver o portfólio está abaixo da foto de perfil 
