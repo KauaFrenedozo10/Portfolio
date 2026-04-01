@@ -130,7 +130,7 @@
             // Projects
             "projects-title": { pt: "Meus <span>Projetos</span>", en: "My <span>Projects</span>" },
             "project-1-title": { pt: "FaceShield", en: "FaceShield" },
-            "project-1-desc": { pt: "Sistema de gerenciamento de empréstimos com reconhecimento facial. Backend em Spring Boot, frontend em React.", en: "Loan management system with facial recognition. Backend in Spring Boot, frontend in React." },
+            "project-1-desc": { pt: "Sistema de gerenciamento de empréstimos com reconhecimento facial. Backend em Java e Spring Boot, frontend em JavaScript, HTML e CSS e para o Banco Postgree", en: "Loan management system with facial recognition. Backend in Spring Boot, frontend in JavaScript HTML and Css. DataBase Postgree." },
             "project-2-title": { pt: "Landing Page – FaceShield", en: "Landing Page – FaceShield" },
             "project-2-desc": { pt: "Página institucional para a empresa, destacando serviços e identidade visual.", en: "Corporate page highlighting services and brand identity." },
             "project-3-title": { pt: "Varys", en: "Varys" },
