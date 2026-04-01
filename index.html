@@ -1,274 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KauãFrenedozo - Full-Stack Developer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kauã Frenedozo - Full-Stack Developer</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Portfolio/styles/style.css">
-  <script src="./Portfolio/scripts/script.js" defer></script>
+    <script src="./Portfolio/scripts/script.js" defer></script>
 </head>
-
 <body>
-  <!-- Header & Navigation -->
-  <header>
-    <div class="container">
-      <nav>
-        <a href="#" class="logo">Kauã Frenedozo.<span style="color: rgb(255, 247, 0);">_</span></a>
-        <div class="nav-links">
-          <a href="#home" class="active" id="menu-home">home</a>
-          <a href="#expertise" id="menu-expertise">expertise</a>
-          <a href="#work" id="menu-work">work</a>
-          <a href="#contact" id="menu-contact">contact</a>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Kauã Frenedozo.<span style="color: #eeff00;">_</span></a>
+                <div class="nav-links">
+                    <a href="#home" class="active" id="menu-home">home</a>
+                    <a href="#about" id="menu-about">sobre</a>
+                    <a href="#expertise" id="menu-expertise">habilidades</a>
+                    <a href="#work" id="menu-work">projetos</a>
+                    <a href="#contact" id="menu-contact">contato</a>
+                </div>
+                <div class="language-selector">
+                    <button class="language-btn" id="language-toggle">
+                        <img class="language-flag" id="flag-icon" src="https://flagcdn.com/w20/br.png" alt="Português">
+                    </button>
+                </div>
+                <div class="hamburger"><i class="fas fa-bars"></i></div>
+            </nav>
         </div>
-        <div class="language-selector">
-          <button class="language-btn" id="language-toggle">
-            <img class="language-flag" id="flag-icon" src="https://flagcdn.com/w20/br.png" alt="Português">
-          </button>
-        </div>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-name">Kauã Frenedozo</h1>
-        <p class="hero-title" id="hero-title">FULL-STACK DEVELOPER</p>
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-name">Kauã Frenedozo</h1>
+            <p class="hero-title" id="hero-title">DESENVOLVEDOR FULL-STACK</p>
+            
+        </div>
+        <div class="scroll-down" data-target="#expertise">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-        <div class="hero-links">
-          <a href="#expertise" id="hero-expertise">expertise</a>
-          <a href="#work" id="hero-work">work</a>
-          <a href="#contact" id="hero-contact">contact</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="scroll-down" data-target="#expertise">
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="skills" id="expertise">
-    <div class="container">
-      <h2 class="section-title" id="skills-title">Minhas <span>Habilidades</span></h2>
-      <div class="skills-grid">
-        <!-- Frontend Skills -->
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-html5"></i>
-          </div>
-          <h3>HTML5 & CSS3</h3>
-          <p id="skill-html">
-            Criação de interfaces responsivas e acessíveis com as mais
-            recentes tecnologias web.
-          </p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-js"></i>
-          </div>
-          <h3>JavaScript</h3>
-          <p id="skill-js">
-            Desenvolvimento de aplicações interativas e dinâmicas com ES6+ e
-            padrões modernos.
-          </p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-react"></i>
-          </div>
-          <h3>React.js</h3>
-          <p id="skill-react">
-            Construção de interfaces de usuário escaláveis e de alto
-            desempenho com React.
-          </p>
-        </div>
-        
-        <!-- Backend Skills -->
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-java"></i>
-          </div>
-          <h3>Java & Spring Boot</h3>
-          <p id="skill-java">
-            Desenvolvimento de aplicações back-end robustas e escaláveis com Java e Spring Boot.
-          </p>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-python"></i>
-          </div>
-          <h3>Python</h3>
-          <p id="skill-python">
-            Programação em Python para automação, análise de dados e desenvolvimento web.
-          </p>
-        </div>
-        
-        <!-- DevOps & Tools -->
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fab fa-github"></i>
-          </div>
-          <h3>GitHub & GitFlow</h3>
-          <p id="skill-github">
-            Versionamento de código e gerenciamento de branches seguindo o fluxo GitFlow.
-          </p>
-        </div>
-        
-        <!-- Agile & Management -->
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fas fa-tasks"></i>
-          </div>
-          <h3>Scrum & Kanban</h3>
-          <p id="skill-scrum">
-            Gestão ágil de projetos com sprints, backlogs e quadros de tarefas.
-          </p>
-        </div>
-        
-        <!-- UI/UX -->
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fas fa-paint-brush"></i>
-          </div>
-          <h3>UI/UX Design</h3>
-          <p id="skill-ui">
-            Design de interfaces intuitivas focadas na experiência do usuário
-            e usabilidade.
-          </p>
-        </div>
-        
-        <!-- Mobile -->
-        <div class="skill-card">
-          <div class="skill-icon">
-            <i class="fas fa-mobile-alt"></i>
-          </div>
-          <h3>Responsividade</h3>
-          <p id="skill-responsive">
-            Sites que se adaptam perfeitamente a qualquer dispositivo ou
-            tamanho de tela.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="projects" id="work">
-    <div class="container">
-      <h2 class="section-title" id="projects-title">Meus <span>Projetos</span></h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-img">
-            <img
-              src="./Portfolio/imgs/EscritoFS.jpg"
-              alt="Landing Page" />
-          </div>
-          <div class="project-info">
-            <h3 id="project-1-title">ola</h3>
-            <p id="project-1-desc">
-            </p>
-            <div class="tech-stack">
-              <span class="tech">JavaScript</span>
-              <span class="tech">CSS</span>
-              <span class="tech">HTML</span>
-              <span class="tech">Python</span>
-              <span class="tech">PostgreSQL</span>
-              <span class="tech">Spring Boot</span>
-              <span class="tech">Java</span>
-              
+    <!-- Sobre Mim (simples, com foto) -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" id="about-title">Sobre <span>Mim</span></h2>
+            <div class="about-content">
+                <div class="about-photo">
+                    <div class="photo-frame">
+                        <!-- Substitua o src pela sua foto real -->
+                        <img src="./Portfolio/imgs/KauaIMG.png" alt="Kauã Frenedozo" id="profile-photo">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p id="about-text-p1">Olá! Sou Kauã Frenedozo, desenvolvedor full-stack apaixonado por transformar ideias em soluções digitais impactantes. Minha jornada na programação começou no SENAI e hoje combino Java, Spring Boot, React e JavaScript para criar aplicações.</p>
+                    <p id="about-text-p2">Acredito que código bem escrito deve ser tão bonito quanto funcional. Por isso, sempre busco unir boas práticas de desenvolvimento com design centrado no usuário. Fora do código, gosto de contribuir e aprender novas tecnologias.</p>
+                </div>
             </div>
-            <div class="project-links">
-              <a href="https://github.com/orgs/FaceShield-SENAI-TCC/repositories"><i class="fas fa-eye"></i> <span id="project-code"></span></a>
-            </div>
-          </div>
         </div>
+    </section>
 
-        <div class="project-card">
-          <div class="project-img">
-            <img
-              src="https://i.postimg.cc/1XZd00kk/Face-Shield-Tipografia.png"
-              alt="" />
-          </div>
-          <div class="project-info">
-            <h3 id="project-2-title"></h3>
-            <p id="project-2-desc">      
-            </p>
-            <div class="tech-stack">
-              <span class="tech">HTML</span>
-              <span class="tech">CSS</span>
-              <span class="tech">JavaScript</span>
+    <!-- Skills -->
+    <section class="skills" id="expertise">
+        <div class="container">
+            <h2 class="section-title" id="skills-title">Minhas <span>Habilidades</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML5 & CSS3</h3>
+                    <p id="skill-html">Criação de interfaces responsivas e acessíveis com as mais recentes tecnologias web.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <p id="skill-js">Desenvolvimento de aplicações interativas e dinâmicas com ES6+ e padrões modernos.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3>React.js</h3>
+                    <p id="skill-react">Construção de interfaces de usuário escaláveis e de alto desempenho com React.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <h3>Java & Spring Boot</h3>
+                    <p id="skill-java">Desenvolvimento de aplicações back-end robustas e escaláveis com Java e Spring Boot.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p id="skill-python">Programação em Python para automação, análise de dados e desenvolvimento web.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub & GitFlow</h3>
+                    <p id="skill-github">Versionamento de código e gerenciamento de branches seguindo o fluxo GitFlow.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Scrum & Kanban</h3>
+                    <p id="skill-scrum">Gestão ágil de projetos com sprints, backlogs e quadros de tarefas.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p id="skill-ui">Design de interfaces intuitivas focadas na experiência do usuário e usabilidade.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsividade</h3>
+                    <p id="skill-responsive">Sites que se adaptam perfeitamente a qualquer dispositivo ou tamanho de tela.</p>
+                </div>
             </div>
-            <div class="project-links">
-              <a href="https://senaisp-unid601-projetos.github.io/FaceShield/"><i class="fas fa-eye"></i> <span id="project-code-2"></span></a>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="work">
+        <div class="container">
+            <h2 class="section-title" id="projects-title">Meus <span>Projetos</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./Portfolio/imgs/EscritoFS.jpg" alt="FaceShield Backend">
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project-1-title">FaceShield</h3>
+                        <p id="project-1-desc">Sistema de gerenciamento de empréstimos com reconhecimento facial. Backend em Spring Boot, frontend em React.</p>
+                        <div class="tech-stack">
+                            <span class="tech">Java</span>
+                            <span class="tech">Spring Boot</span>
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JavaScript</span>
+                            <span class="tech">Mysql</span>
+                            <span class="tech">PostgreeSql</span>
+                            <span class="tech">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/orgs/FaceShield-SENAI-TCC/repositories"><i class="fas fa-eye"></i> <span id="project-code">Ver Código</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://i.postimg.cc/1XZd00kk/Face-Shield-Tipografia.png" alt="Landing Page FaceShield">
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project-2-title">Landing Page – FaceShield</h3>
+                        <p id="project-2-desc">Página institucional para a empresa, destacando serviços e identidade visual.</p>
+                        <div class="tech-stack">
+                            <span class="tech">HTML</span>
+                            <span class="tech">CSS</span>
+                            <span class="tech">JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://senaisp-unid601-projetos.github.io/FaceShield/"><i class="fas fa-eye"></i> <span id="project-code-2">Ver Demo</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="./Portfolio/imgs/VarysLogo.jpg" alt="Em breve">
+                    </div>
+                    <div class="project-info">
+                        <h3 id="project-3-title">Varys</h3>
+                        <p id="project-3-desc">Em breve mais um projeto incrível. Aguarde novidades!</p>
+                        <div class="tech-stack">
+                            <span class="tech">React</span>
+                            <span class="tech">TypeScript</span>
+                            <span class="tech">Tailwind</span>
+                            <span class="tech">Gotenberg</span>
+                            <span class="tech">Zod</span>
+                            <span class="tech">Bun</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-eye"></i> <span id="project-code-3">Em breve</span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </section>
 
-        <div class="project-card">
-          <div class="project-img">
-            <img
-              src="https://i.postimg.cc/mk5b25zz/coming-Soon.webp"
-              alt="" />
-          </div>
-          <div class="project-info">
-            <h3 id="project-3-title"></h3>
-            <p id="project-3-desc">
-            </p>
-            <div class="tech-stack">
-              <span class="tech">#</span>
-              <span class="tech">#</span>
-              <span class="tech">#</span>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title" id="contact-title">Entre em <span>Contato</span></h2>
+                <p id="contact-text">Estou disponível para novos projetos e oportunidades. Entre em contato comigo através dos canais abaixo ou envie uma mensagem direta.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/kau%C3%A3-frenedozo-8641492b5/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/KauaFrenedozo10" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:kfrenedozo@gmail.com" class="email-link">kfrenedozo@gmail.com</a>
+                </div>
             </div>
-            <div class="project-links">
-              <a href="#"><i class="fas fa-eye"></i> <span id="project-code-3"></span></a>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-content">
-        <h2 class="section-title" id="contact-title">Entre em <span>Contato</span></h2>
-        <p id="contact-text">
-          Estou disponível para novos projetos e oportunidades. Entre em
-          contato comigo através dos canais abaixo ou envie uma mensagem
-          direta.
-        </p>
-
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/kau%C3%A3-frenedozo-8641492b5/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/KauaFrenedozo10"><i class="fab fa-github"></i></a>
+    <footer>
+        <div class="container">
+            <p id="footer-text">&copy; 2026 Kauã Frenedozo. Todos os direitos reservados.</p>
         </div>
+    </footer>
 
-        <div class="contact-info">
-          <a href="mailto:kfrenedozo@gmail.com" class="email-link">kfrenedozo@gmail.com</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p id="footer-text">&copy; 2025 Kauã Frenedozo. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+    
 </body>
-
 </html>
